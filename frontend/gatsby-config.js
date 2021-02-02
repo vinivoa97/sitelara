@@ -16,7 +16,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL || "http://localhost:1337",
-        contentTypes: ["article", "category", "writer"],
+        contentTypes: ["article", "category", "writer", "card-Professors"],
         singleTypes: [`homepage`, `global`],
         queryLimit: 1000,
       },
@@ -32,8 +32,38 @@ module.exports = {
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
+        icon: `src/images/icon.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ], // Add or remove icon sizes as desired
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+          custom: {
+          families: ["Roboto, Regular"],
+          urls: ["/fonts/fonts.css"],
+          },
+      },
+  },
+  {
+    resolve: "gatsby-plugin-google-fonts",
+    options: {
+        fonts: [
+            "Roboto:300" 
+        ], display: "swap"       
+    }
+  },
     "gatsby-plugin-offline",
   ],
 };

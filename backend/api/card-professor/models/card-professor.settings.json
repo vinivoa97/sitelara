@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_professors",
+  "info": {
+    "name": "CardProfessor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nomeProfessor": {
+      "type": "string",
+      "required": true
+    },
+    "descricaoProfessor": {
+      "type": "text",
+      "required": true
+    },
+    "fotoProfessor": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "lattesProfessor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
