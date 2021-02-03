@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/quem-somos-page",
+      "handler": "quem-somos-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/quem-somos-page",
+      "handler": "quem-somos-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/quem-somos-page",
+      "handler": "quem-somos-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
