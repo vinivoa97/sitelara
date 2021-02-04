@@ -6,7 +6,7 @@ import AOS from "aos";
 //import NavBar from '../components/navbar';
 //import Footer from "../components/footer";
 import IMGEquipe from "../assets/equipe.png";
-//import CardProfessor2 from "../components/card-professor2";
+import CardProfessor from "../components/cardProfessor";
 //import CardAluno from "../components/card-aluno";
 import Layout from "../components/layout";
 
@@ -19,7 +19,7 @@ const QuemSomosPage = () => {
   }, []);
 
   return (
-    <Layout seo={data.strapiHomepage.seo}>
+    <Layout seo={data.strapiQuemSomosPage.seo}>
       <section className="secao1" >
       <div className="container sobre-nos">
         <div className="row">
@@ -34,6 +34,7 @@ const QuemSomosPage = () => {
       </div>
       <svg id="divisoria" viewBox="0 0 1280 187.25"><defs></defs><path className="cls-1" d="M1280,499.33c-184.35,85.22-418.76,153.33-594.33,43.34-21.25-13.31-29.24-21.47-50-35C528.53,437.82,343.26,395.39,0,509.33V626H1280Z" transform="translate(0 -438.75)"/></svg>
     </section>
+    <CardProfessor />
     
     </Layout>
   );
@@ -41,7 +42,7 @@ const QuemSomosPage = () => {
 
 const query = graphql`
   query {
-    strapiHomepage {
+    strapiQuemSomosPage {
       hero {
         title
       }
@@ -53,35 +54,9 @@ const query = graphql`
         }
       }
     }
-    allStrapiArticle(filter: { status: { eq: "published" } }) {
-      edges {
-        node {
-          strapiId
-          slug
-          title
-          category {
-            name
-          }
-          image {
-            childImageSharp {
-              fixed(width: 800, height: 500) {
-                src
-              }
-            }
-          }
-          author {
-            name
-            picture {
-              childImageSharp {
-                fixed(width: 30, height: 30) {
-                  src
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+    
+     
+  
   }
 `;
 
