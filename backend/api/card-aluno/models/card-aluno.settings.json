@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_alunos",
+  "info": {
+    "name": "CardAluno",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nomeAluno": {
+      "type": "string",
+      "required": true
+    },
+    "lattesAluno": {
+      "type": "string",
+      "required": true
+    },
+    "linkedinAluno": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

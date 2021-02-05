@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/laboratorios-page",
+      "handler": "laboratorios-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/laboratorios-page",
+      "handler": "laboratorios-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/laboratorios-page",
+      "handler": "laboratorios-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

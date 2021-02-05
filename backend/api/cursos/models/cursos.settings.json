@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "Cursos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nomeCurso": {
+      "type": "string",
+      "required": true
+    },
+    "descricaoCurso": {
+      "type": "text",
+      "required": true
+    },
+    "fotoCurso": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "statusCurso": {
+      "type": "boolean",
+      "required": false
+    },
+    "linkCurso": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

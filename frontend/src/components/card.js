@@ -1,7 +1,69 @@
 import React from "react";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
 import Img from "gatsby-image";
 
+
+import "../styles/blogspot.css";
+import { Container, Row, Col, Button } from 'react-bootstrap'
+
+
+const Card = ({ article }) => {
+  return (
+    <Container className="blogpost--container">
+      <Row>
+        <Col lg={6}>
+          <div className="gray-background">
+            <div className="image--container">
+              <Img
+              fixed={article.node.image.childImageSharp.fixed}
+              imgStyle={{ position: "static" }}
+              />
+            </div>
+          </div>
+        </Col>
+        <Col lg={6}>
+          <div className="description--container">
+            <h2 className="blogpost-title">{article.node.title}</h2>
+            <div className="blogpost-data">
+              <p>{article.node.author.name}</p>
+              <p>{ article.node.publishedAt }</p>
+            </div>
+            <div className="preview--container">
+              <h3 className="blogpost-preview">
+                { article.node.content }
+              </h3>
+            </div>
+            <div className="button--container">
+              <Button
+                className="more-info--button"
+                href={`/article/${article.node.slug}`}
+              >
+                Continue lendo
+              </Button>{' '}
+            </div>
+          </div>
+
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const Card = ({ article }) => {
   return (
     <Link to={`/article/${article.node.slug}`} className="uk-link-reset">
@@ -43,4 +105,6 @@ const Card = ({ article }) => {
   );
 };
 
+
+*/
 export default Card;

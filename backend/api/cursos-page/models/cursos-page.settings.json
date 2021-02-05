@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "cursos_pages",
+  "info": {
+    "name": "CursosPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero"
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import Moment from "react-moment";
 import Layout from "../../components/layout";
 import Markdown from "react-markdown";
+import BlogPostPage from "../../components/blogpost-page/blogpost-page";
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -12,7 +13,7 @@ export const query = graphql`
       title
       description
       content
-      publishedAt
+      publishedAt (formatString: "DD/MM/YY")
       image {
         publicURL
         childImageSharp {
@@ -47,7 +48,29 @@ const Article = ({ data }) => {
   return (
     <Layout seo={seo}>
       <div>
-        <div
+
+      <BlogPostPage
+          title={article.title}
+          author= {article.author.name}
+          date={article.publishedAt}
+          body={article.content}
+          imageUrl={article.image.childImageSharp.fixed}
+        />
+
+
+
+
+        
+      </div>
+    </Layout>
+  );
+};
+
+export default Article;
+
+
+/*
+<div
           id="banner"
           className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
           data-src={article.image.publicURL}
@@ -83,9 +106,5 @@ const Article = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
-    </Layout>
-  );
-};
 
-export default Article;
+      */

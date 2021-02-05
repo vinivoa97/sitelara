@@ -3,11 +3,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import '../styles/estilo.css';
 import '../styles/quemsomos.css'; 
 import AOS from "aos";
-//import NavBar from '../components/navbar';
-//import Footer from "../components/footer";
 import IMGEquipe from "../assets/equipe.png";
 import CardProfessor from "../components/cardProfessor";
-//import CardAluno from "../components/card-aluno";
+import CardAluno from "../components/cardAluno";
 import Layout from "../components/layout";
 
 
@@ -35,6 +33,7 @@ const QuemSomosPage = () => {
       <svg id="divisoria" viewBox="0 0 1280 187.25"><defs></defs><path className="cls-1" d="M1280,499.33c-184.35,85.22-418.76,153.33-594.33,43.34-21.25-13.31-29.24-21.47-50-35C528.53,437.82,343.26,395.39,0,509.33V626H1280Z" transform="translate(0 -438.75)"/></svg>
     </section>
     <CardProfessor />
+    <CardAluno/>
     
     </Layout>
   );

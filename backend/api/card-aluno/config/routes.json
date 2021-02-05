@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/card-alunos",
+      "handler": "card-aluno.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-alunos/count",
+      "handler": "card-aluno.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-alunos/:id",
+      "handler": "card-aluno.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/card-alunos",
+      "handler": "card-aluno.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/card-alunos/:id",
+      "handler": "card-aluno.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/card-alunos/:id",
+      "handler": "card-aluno.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

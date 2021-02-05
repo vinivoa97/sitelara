@@ -3,6 +3,7 @@ import '../styles/estilo.css';
 import logoBranca from '../assets/logo-branca.png'; 
 
 
+
 export default function Footer() {
  
   return(
