@@ -1,0 +1,101 @@
+/*************** SECAO1 ***************/
+#secao1Lab{
+    background-color: #34a853;
+    height: auto;
+  }
+  
+  
+  #divisoriaLab {
+    background-color: #34a853;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sobre-lab {
+    padding-top: 90px;
+    color: #FFFFFF;
+  }
+  
+  .titulo-lab {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  
+  .desc-lab {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .img-lab {
+    height: 19em;
+    padding-left: 50px;
+  }
+  
+  #secao2{
+    margin-top: 70px;
+  }
+  
+  .tipo-exp{
+    margin-top: 50px;
+  }
+  
+  
+  /******************** SECAO2 **********************/
+  
+  .container-exps {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .card {
+    border-width: 0;
+  }
+  
+  .tipo-exp {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 70px;
+    margin-left: -20px;
+  }
+  
+  .nome-exp {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .img-experimento {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn-desativado {
+    background-color: #34A853 !important;
+  }
+  
+  .btn-laboratorio {
+    background-color: #34A853;
+    border-radius: 70px;
+    border-color: #34A853;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .btn-laboratorio:hover {
+    background-color: #25803E;
+    border-color: #25803E;
+    color: white;
+  }
+  
+  .div-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  

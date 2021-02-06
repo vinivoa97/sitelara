@@ -1,7 +1,8 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import '../styles/desenvolvendo.css';
+import IMGRobot from '../assets/robot.png';
 
 const NotFoundPage = () => (
   <Layout>
@@ -11,8 +12,12 @@ const NotFoundPage = () => (
         metaDescription: "It looks like you got lost",
       }}
     />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn't exist... the sadness.</p>
+    <div className="flex-box container-box">
+        <div className="content-box"> 
+          <img className="robot" src={IMGRobot} alt=""></img>
+          <p>Desculpe-nos pelos transtornos, estamos em desenvolvimento!</p>
+        </div>
+      </div>
   </Layout>
 );
 

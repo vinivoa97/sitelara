@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto';
+  }
+  
+
+  
+  p{
+    margin-top: 20px;
+    font-size:22px; 
+  }
+  
+  .robot{
+    max-width:200px;
+    max-height:150px;
+  }
+  
+  .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-box {
+    height: 500px;
+  }
+  
+  .content-box {
+    text-align: center;
+    justify-content: center;
+    width: 615px;
+  }
+  

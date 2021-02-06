@@ -19,7 +19,7 @@ module.exports = {
         contentTypes: ["article", "category", "writer", "card-Professors",
                        "card-alunos", "publicacoes", "cursos", "experimentos"],
         singleTypes: [`homepage`, `global`, `quem-somos-page`,
-                      `cursos-page`, `laboratorios-page`, `publicacoes-page`],
+                      `cursos-page`, `laboratorios-page`, `publicacoes-page`, `blog-page`],
         queryLimit: 1000,
       },
     },
@@ -66,6 +66,9 @@ module.exports = {
         ], display: "swap"       
     }
   },
-    "gatsby-plugin-offline",
+    
   ],
 };
+
+
+//"gatsby-plugin-offline",

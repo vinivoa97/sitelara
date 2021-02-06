@@ -1,0 +1,75 @@
+#secao1Cursos {
+    background-color: #FBBC05;
+    height: auto;
+  }
+  
+  #divisoriaCursos {
+    background-color: #FBBC05;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sobre-lab {
+    padding-top: 90px;
+  }
+  
+  .titulo-lab {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .desc-lab {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  .img-lab {
+    height: 19em;
+    padding-left: 50px;
+  }
+  
+  .container-exps {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .card {
+    border-width: 0;
+  }
+  
+  .tipo-exp {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 70px;
+    margin-left: -20px;
+  }
+  
+  .nome-exp {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .img-experimento {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn-cursos{
+    background-color: #FBBC05;
+    border-radius: 70px;
+    width: 180px;
+    height:50px;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .btn-cursos:hover {
+    background-color: #FAA100;
+  }
+  
+  .div-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  

@@ -30,7 +30,7 @@ const Card = ({ article }) => {
             </div>
             <div className="preview--container">
               <h3 className="blogpost-preview">
-                { article.node.content }
+                { article.node.description }
               </h3>
             </div>
             <div className="button--container">
