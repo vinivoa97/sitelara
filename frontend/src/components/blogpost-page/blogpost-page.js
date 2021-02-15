@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Container } from 'react-bootstrap'
 import Img from "gatsby-image";
+import Markdown from "react-markdown";
 /**
  * title: Titulo do post
  * date: Data de publicacoa
@@ -24,9 +25,7 @@ export default function BlogPostPage(props) {
             <h2>{ props.title }</h2>
             <h4>Escrito por { props.author }</h4>
         </div>
-        <span className="body--container">
-            { props.body }
-        </span>
+        <Markdown className="body--container" source= { props.body } escapeHtml={false} />  
     </Container>
   );
 }
